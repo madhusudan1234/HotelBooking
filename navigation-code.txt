@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The landing page of Rest-EL hotel website">
+    <!--link to css, bootstrap and fontawesome and font-family-->
+    <link rel="stylesheet" href="../CSS/images.css" media="screen">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        media="screen">
+    <link rel="stylesheet" href="../CSS/images.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <title>Rest-el</title>
+</head>
+
+<body>
+
+    <!--start of header tag-->
+    <header class="header">
+        <!--start of logo-->
+        <h1 id="logo">Rest<sub>-EL</sub></h1>
+        <!--end of logo-->
+
+        <!--start of navigation bar-->
+        <nav class="nav">
+            <ul id="menu-nav">
+                <li class="menu-nav__item">
+                    <a href="#home" class="menu-nav__link active" accesskey="h">
+                        <i class="meanu"></i>home</a></li>
+                <li class="menu-nav__item"><a href="../HTML/reservation.html" class="menu-nav__link" accesskey="r"><i
+                            class="reserve"></i>reservations</a></li>
+                <li class="menu-nav__item"><a href="" class="menu-nav__link" accesskey="a"><i
+                            class="about"></i>about us</a></li>
+                <li class="menu-nav__item"><a href="" class="menu-nav__link" accesskey="c"><i
+                            class="contact"></i>contact us</a></li>
+            </ul>
+        </nav>
+        <!--end of navigation bar-->
+
+    </header>
+
+    <section class="section1" id="home">
+        <img src="../Images/de-java-hotel.jpg" alt="First Image" class="first-img">
+        <div class="centered">
+            <h2 style="font-size: 50px;">Welcome to Rest-EL</h2>
+        </div>
+    </section>
+
+    <!--start of facilities section-->
+    <section class="section3" id="facilities">
+        <!--start of heading for facility part-->
+        <div class="section2__head">
+            <h3 class="text-capitalize">facilities & services
+                <hr class="bg-primary second-hr">
+            </h3>
+        </div>
+        <div class="image-container">
+            <div class="column">
+                <img src="../Images/meeting-room.jpg" alt="picture of conference room" style="width:85%">
+                <figcaption>
+                    <h4 class="mt-3 text-capitalize">meeting room</h4>
+                    <h5 id="details" class="text-capitalize">refreshing conference rooms</h5>
+                </figcaption>
+            </div>
+            <div class="column">
+                <img src="../Images/resting-room.jpg" alt="picture of resting room" style="width:85%">
+                <figcaption>
+                    <h4 class="mt-3 text-capitalize">resting area</h4>
+                    <h5 id="details" class="text-capitalize">relaxation and entertainment</h5>
+                </figcaption>
+            </div>
+            <div class="column">
+                <img src="../Images/dining-room.jpg" alt="picture of resting room" style="width:85%">
+                <figcaption>
+                    <h4 class="mt-3 text-capitalize">dinning</h4>
+                    <h5 id="details" class="text-capitalize">Dining Section with friends and family</h5>
+            </div>
+        </div>
+    </section>
+    <!--end of facilities section-->
+
+
+
+
+    <!--start of footer section-->
+    <section class="section6">
+        <div class="footer__div1 py-5 row">
+
+            <div class="text-capitalize">
+                <ul class="ul1">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="../Hotel-Web-master/html/reservation.html">reservations</a></li>
+                    <li><a href="../Hotel-Web-master/html/about.html">help</a></li>
+                </ul>
+            </div>
+
+            <div class="text-capitalize div2 d-none d-md-block col-md-6 col-lg-3">
+                <ul class="ul1">
+                    <li><a href="#">profile</a></li>
+                    <li><a href="#facilities">facilities</a></li>
+                    <li><a href="/html/contact.html">contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--end of footer section-->
+
+    <!--link to js and jquery, popper and font awesome-->
+    <script src="../js/index.js"></script>
+    <script src="../js/all.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    z-index: 99999;
+}
+/* 
+ul .menu-nav {
+    position: relative;
+    list-style-type: none;
+    margin-left: 500px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 23px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: rgb(179, 19, 19);
+  } */
+  
+
+.first-img{
+    width: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -00%);
+    
+    
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #867878 0%,
+      #7c7583 29%,
+      #111010 67%,
+      #ffffff 100%
+    );    background-clip: border-box;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 190px;
+  }
+
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+.section2__head {
+    margin-left: 5px;
+}
+
+.section3 {
+    padding: 10px;
+    background-color: #D6C3C3;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.column {
+    margin-left: 3%;
+}
+
+.image-container img {
+    height: 285px;
+    padding-left: 10px;
+    border-radius: 5%;
+    box-shadow: 2px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+/* figcaption{
+    text-align: left;
+} */
+
+.mt-3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#details {
+    text-align: center;
+    margin-right: 30px;
+}
+
+.section6 {
+    background-color: #2C2C5F;
+    color: #fff;
+}
+
+.footer__div1 {
+    text-emphasis: center;
+}
+
+.ul1 {
+    list-style: none;
+    justify-content: space-around;
+}
+
+.ul1 li a {
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+    color: #fff;
+}
+
+.ul1 a:hover {
+    color: #0275d8;
+    transform: scale(1);
+}

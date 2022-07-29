@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The landing page of Rest-EL hotel website">
+    <!--link to css, bootstrap and fontawesome and font-family-->
+    <link rel="stylesheet" href="../CSS/contact.css" media="screen">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        media="screen">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Rest-el</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">Rest<sub>-EL</sub></div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="../HTML/home.html">Home</a></li>
+                <li><a href="../HTML/reservation.html">Reservation</a></li>
+                <li><a href="../HTML/about.html">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- <li class="bnow"><a href="../HTML/contact.html">Book Now</a></li> -->
+            </div>
+        </ul>
+    </nav>
+    <br>
+
+    <!--start of contact section-->
+    <section class="section5" id="contact">
+        <div class="contact-row">
+
+            <div class="container">
+
+                <div style="font-weight: bold; text-align: center; text-transform: capitalize; font-size: 25px;">get in
+                    touch with us</div>
+                <form id="form" class="form" onsubmit="return validateDetails()" novalidate">
+
+                    <div class="control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter Your Name Here"  onblur="validate1()">
+                        <i class="fas fa-check-circle check"></i>
+                        <i class="fas fa-exclamation-circle exclame"></i>
+                        <tr>
+                        <td><div class="errName"></div></td>
+                        </tr>
+                    </div>
+
+                    <div class="control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Input Your Email-Address" onblur="validate2()">
+                        <i class="fas fa-check-circle check"></i>
+                        <i class="fas fa-exclamation-circle exclame"></i>
+                        <tr>
+                            <td><div class="errEmail"></div></td>
+                            </tr>
+                    </div>
+
+                    <div class="control">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" onblur="validate3()"></textarea>
+                        <i class="fas fa-check-circle check"></i>
+                        <i class="fas fa-exclamation-circle exclame"></i>
+                        <tr>
+                            <td><div class="errMessage"></div></td>
+                            </tr>
+                    </div>
+
+                    <button class="button" type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="container" id="book">
+                <div style="font-weight: bold; text-align: center; text-transform: capitalize; font-size: 25px;">get
+                    booked with us</div>
+                <form action="#" class="form">
+                    <div class="control">
+                        <label for="rooms">Rooms :</label>
+                        <select name="loc" id="loc" class="text-capitalize">
+                            <option value="hill">the hill-top suite</option>
+                            <option value="sea">the sea-side suite</option>
+                            <option value="main">the main suite</option>
+                        </select>
+                    </div>
+
+                    <div class="control">
+                        <label for="dateIn">Check-In :</label>
+                        <input type="date">
+                    </div>
+
+                    <div class="control">
+                        <label for="dateOut">Check-Out :</label>
+                        <input type="date">
+                    </div>
+
+                    <div class="control">
+                        <label for="guest">Guests :</label>
+                        <select name="guest" id="guest" class="text-capitalize">
+                            <option value="first">1 guest</option>
+                            <option value="second">2 guests</option>
+                            <option value="third">3 guests</option>
+                            <option value="four">4 guests</option>
+                            <option value="more">5+ guests</option>
+                        </select>
+                    </div>
+
+                    <button style="text-transform: capitalize;" class="button">view rate</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--end of contact section-->
+
+    <!--start of information section-->
+    <section class="info">
+        <div class="container">
+            <h5 style="text-transform: capitalize; font-weight: bolder;">contact details</h5>
+            <h6>Reach out to us and we are always happy to hear from you</h6><br>
+            <div class="row">
+                <div style="font-weight: bolder;">
+                    <i class="fas fa-map-marker-alt fa-2x text-primary mr-3"></i>
+                    <address>
+                        276, Charlse Avenue behind Alaba Oro, Lagos Nigeria. <br>
+                        177, Phase2 Valvet Station, Slevi Sweden. <br>
+                    </address>
+                </div>
+
+                <div style="text-align: center; font-weight:bolder;">
+                    <p>Contact: (+91)123567890</p>
+                    <p>Contact: (+91)0987654321</p>
+                </div>
+                <div class="col-md-12 col-lg-4 email text-center font-weight-bolder">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <label>Email ID for any queries: </label>
+                    <a href="mailto:restel@gmail.com">restel@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of information section-->
+
+
+    <!--start of footer section-->
+    <section class="section6">
+        <div class="footer__div1">
+
+            <div class="text-capitalize">
+                <ul class="ul1">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="../HTML/reservation.html">reservations</a></li>
+                    <li><a href="../HTML/about.html">help</a></li>
+                </ul>
+            </div>
+
+            <div class="text-capitalize div2 d-none d-md-block col-md-6 col-lg-3">
+                <ul class="ul1">
+                    <li><a href="#">profile</a></li>
+                    <li><a href="#facilities">facilities</a></li>
+                    <li><a href="../HTML/contact.html">contact us</a></li>
+                     
+                </ul>
+            </div>
+            <ul>
+                <li><a href="#" class="fa fa-facebook"></a> </li>
+                <li><a href="#" class="fa fa-twitter"></a> </li>
+            </ul>
+            
+           
+        </div>
+    </section>
+    <!--end of footer section-->
+
+    <!--link to js and jquery, popper and font awesome-->
+    <script src="../js/index.js"></script>
+    <script src="../js/validate.js"></script>
+</body>
+
+</html>
